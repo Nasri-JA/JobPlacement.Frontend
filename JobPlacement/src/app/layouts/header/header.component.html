@@ -1,27 +1,34 @@
 <!-- app-header.component.html -->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Dein Logo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Über uns</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dienstleistungen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kontakt</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <div class="dropdown me-5">
+                    <button type="button" class="btn btn-primary dropdown-toggle me-5" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    Admin
+                    </button>
+                    <form class="dropdown-menu p-2" style="width: 195px;">
+                    <div class="mb-3">
+                        <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</div>
   

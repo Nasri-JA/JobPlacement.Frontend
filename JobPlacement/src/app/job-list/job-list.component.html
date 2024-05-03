@@ -1,0 +1,23 @@
+<div *ngIf="loading">Loading jobs...</div>
+<div *ngIf="error">Error loading jobs: {{ error }}</div>
+
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Company</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="jobs.length > 0">
+        <tr *ngFor="let job of jobs">
+          <td>{{ job.title }}</td>
+          <td>{{ job.companyName }}</td>
+          <td>{{ job.location }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+

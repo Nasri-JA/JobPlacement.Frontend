@@ -1,23 +1,20 @@
 <div *ngIf="loading">Loading jobs...</div>
 <div *ngIf="error">Error loading jobs: {{ error }}</div>
 
-<div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Company</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody *ngIf="jobs.length > 0">
-        <tr *ngFor="let job of jobs">
-          <td>{{ job.title }}</td>
-          <td>{{ job.companyName }}</td>
-          <td>{{ job.location }}</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="row">
+  <div class="col-12" *ngFor="let job of jobs">
+    <div class="card mb-3 job-card">
+      <div class="card-body">
+        <h2 class="card-title">{{ job.title }}</h2>
+        <h5 class="card-subtitle mb-3 text-muted">{{ job.companyName }}</h5>
+        <p class="card-text">{{ job.description }}</p>
+        <p class="card-text"><strong>Location:</strong> {{ job.location }}</p>
+        <p class="card-text"><strong>Salary:</strong> {{ job.salary }}</p>
+        <a href="#" class="btn btn-info">Details</a>
+      </div>
+    </div>
   </div>
+</div>
+
   
 

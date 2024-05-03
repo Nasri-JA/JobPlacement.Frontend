@@ -2,33 +2,27 @@
 <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <div class="dropdown me-5">
-                    <button type="button" class="btn btn-primary dropdown-toggle me-5" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                    Admin
+            <a class="navbar-brand" href="#">Home</a>
+            <div class="d-flex flex-grow-1 justify-content-end"> <!-- Flexbox verwendet, um den Inhalt rechts auszurichten -->
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        Admin
                     </button>
-                    <form class="dropdown-menu p-2" style="width: 195px;">
-                    <div class="mb-3">
-                        <label for="exampleDropdownFormEmail2" class="form-label">Email Adresse</label>
-                        <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@bsp.de">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleDropdownFormPassword2" class="form-label">Passwort</label>
-                        <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Passwort">
-                    </div>
-                    <button type="submit" class="btn btn-success">Anmelden</button>
+                    <form class="dropdown-menu p-2 dropdown-menu-end">
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormEmail2" class="form-label">Email Adresse</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@bsp.de">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormPassword2" class="form-label">Passwort</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Passwort">
+                        </div>
+                        <button type="submit" class="btn btn-success">Anmelden</button>
                     </form>
                 </div>
-            </li>
-            </ul>
-        </div>
+            </div>
         </div>
     </nav>
+    
 </div>
   
